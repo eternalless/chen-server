@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<div id="app">
+<h1>[[data]]</h1>
+有点意思！！！接下来....
+<input type="text" v-model="data">
+{{data}}
+</div>
+</body>
+<script src="/js/index.js"></script>
+<script src="https://cdn.bootcss.com/vue/2.5.17-beta.0/vue.min.js"></script>
+<script>
+  var app = new Vue({
+    el: '#app',
+    data: {
+      data: '有点意思！！！！'
+    }
+  })
+</script>
+</html>

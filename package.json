@@ -1,0 +1,34 @@
+{
+  "name": "chen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server:bulid": "gulp",
+    "start": "pm2 start",
+    "bulid": "",
+    "docs": "jsdoc ./src/nodeuii/**/*.js -d ./docs/jsdocs",
+    "start:dev": "cross-env NODE_ENV=development supervisor ./dist/app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "cross-env": "^5.2.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-watch": "^5.0.1",
+    "jsdoc": "^3.5.5",
+    "supervisor": "^0.12.0"
+  },
+  "dependencies": {
+    "koa": "^2.5.2",
+    "koa-simple-router": "^0.2.0",
+    "koa-static": "^5.0.0",
+    "koa-swig": "^2.2.1",
+    "lodash": "^4.17.10"
+  }
+}
